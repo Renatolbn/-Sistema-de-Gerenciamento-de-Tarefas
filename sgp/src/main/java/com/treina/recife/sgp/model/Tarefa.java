@@ -33,11 +33,11 @@ public class Tarefa {
     @Column(name = "titulo", nullable = false)
     private String titulo;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @Column(name = "dataCriacao", nullable = false)
     private LocalDate dataCriacao;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @Column(name = "dataConclusao")
     private LocalDate dataConclusao;
 

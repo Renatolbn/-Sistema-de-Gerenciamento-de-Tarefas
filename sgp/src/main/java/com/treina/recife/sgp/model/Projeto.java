@@ -36,11 +36,11 @@ public class Projeto {
     private String descricao;
 
     @Column(name = "dataInicio", nullable = false)
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
     private LocalDate dataInicio;
 
     @Column(name = "dataConclusao", nullable = false)
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private LocalDate dataConclusao;
 
     @ManyToOne

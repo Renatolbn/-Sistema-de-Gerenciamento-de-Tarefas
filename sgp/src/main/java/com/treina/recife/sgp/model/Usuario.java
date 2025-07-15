@@ -41,7 +41,7 @@ public class Usuario {
     @Column(name = "SENHA", nullable = false)
     private String senha;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @Column(name = "DATANASCIMENTO", nullable = false)
     private LocalDate dataNascimento;
 
